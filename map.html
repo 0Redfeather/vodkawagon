@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A digital scrapbook with multiple cultural heritage projects">
+    <meta name="author" content="Zach Francis & Kayla Kubehl">
+
+    <title>VodkaWagon Map</title>
+
+    <!-- Mapbox Studio -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- style for map -->
+    <style>
+      body {margin:0; padding:0;}
+      #VodkaWagon {position:absolute; top:0; bottom:0; left:0; width:100%; height: 100%;}
+    </style>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="post.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Oral Histories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Map</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Database</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contribute</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+<!-- VodkaWagon Map  - https://docs.mapbox.com/mapbox-gl-js/example/popup-on-click/ for popup help - decided to just do title, description and Link-->
+  <div class="container">
+    <div id='VodkaWagon'></div>
+    <!-- Map Script -->
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiMHJlZGZlYXRoZXIiLCJhIjoiY2them13dWM5MGI1bDMxcjhlNWlveHFlaiJ9.6k6K8LE8HLlAJpZWGnP-HQ';
+    var map = new mapboxgl.Map({
+      container: 'VodkaWagon',
+      style: 'mapbox://styles/0redfeather/ckazkeiwy2nkb1intfb08bptv', // stylesheet location
+      center: [-0, 20], // starting position [lng, lat]
+      zoom: 1.8 // starting zoom
+    });
+
+    var nav = new mapboxgl.NavigationControl();
+    map.addControl(nav, 'bottom-left');
+
+    map.addControl(new mapboxgl.FullscreenControl({container: document.querySelector('body')}));
+
+    var marker = new mapboxgl.Marker()
+    .setLngLat([-84.0,44.978718])
+    .addTo(map);
+
+    var markerHeight = 50, markerRadius = 10, linearOffset = 25;
+    var popupOffsets = {
+    'top': [0, 0],
+    'top-left': [0,0],
+    'top-right': [0,0],
+    'bottom': [0, -markerHeight],
+    'bottom-left': [linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+    'bottom-right': [-linearOffset, (markerHeight - markerRadius + linearOffset) * -1],
+    'left': [markerRadius, (markerHeight - markerRadius) * -1],
+    'right': [-markerRadius, (markerHeight - markerRadius) * -1]
+    };
+
+    var ll = new mapboxgl.LngLat(-84.456114,42.730554);
+
+    var popup = new mapboxgl.Popup({})
+      .setLngLat([-84.456114,42.730554])
+      .setHTML("<h1>Hello World!</h1>")
+      .setMaxWidth("300px")
+      .addTo(map);
+
+    </script>
+  </div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/clean-blog.min.js"></script>
+
+</body>
+</html>
