@@ -74,76 +74,48 @@
   </header>
 
 <!-- Portfolio Section for project Pages -->
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Scrapbook Pages</h2>
-            <h3 class="section-subheading text-muted">Each "page" is a project or description related to our heritage</h3>
+<div class="container-fluid pb-video-container">
+    <div class="col-md-10 col-md-offset-1">
+        <h3 class="text-center">Sample Video Gallery</h3>
+        <div class="row pb-row">
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/K68UrdUOr2Y?list=RDzuAcaBkcYGE?ecver=1" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Claydee - Alena</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/wjT2JVlUFY4?list=RDzuAcaBkcYGE?ecver=1" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Manuel Riva - Mhm Mhm</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame " width="100%" height="230" src="https://www.youtube.com/embed/papuvlVeZg8?list=RDzuAcaBkcYGE?ecver=1" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Clean Bandit - Rockabye</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/Y1_VsyLAGuk?list=RDzuAcaBkcYGE?ecver=1" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Burak Yeter - Tuesday</label>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" href="about.html">
-                        <img class="img-fluid" src="img/home-bg.jpg" alt=""/></a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Blog</div>
-                        <div class="portfolio-caption-subheading text-muted">Updated monthly</div>
-                    </div>
-                </div>
+        <div class="row pb-row">
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/UY1bt8ilps4?ecver=1" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">F.O. and Peeva - Lichnata</label>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-              <div class="portfolio-item">
-                  <a class="portfolio-link" href="about.html">
-                      <img class="img-fluid" src="img/post-bg.jpg" alt=""/></a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Oral Histories</div>
-                      <div class="portfolio-caption-subheading text-muted">Friends and family</div>
-                  </div>
-              </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/QpbQ4I3Eidg?ecver=1" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">Machine Gun - Bad Things</label>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-              <div class="portfolio-item">
-                  <a class="portfolio-link" href="map.html">
-                      <img class="img-fluid" src="img/about-bg.jpg" alt=""/></a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">The Map</div>
-                      <div class="portfolio-caption-subheading text-muted">Where have we been?</div>
-                  </div>
-              </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/h3kRIxLruDs?ecver=" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">INNA - Say it with your body</label>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-              <div class="portfolio-item">
-                  <a class="portfolio-link" href="about.html">
-                      <img class="img-fluid" src="img/post-sample-image.jpg" alt=""/></a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Database</div>
-                      <div class="portfolio-caption-subheading text-muted">All of our records</div>
-                  </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-              <div class="portfolio-item">
-                  <a class="portfolio-link" href="contribute.html">
-                      <img class="img-fluid" src="img/contact-bg.jpg" alt=""/></a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">Contribute</div>
-                      <div class="portfolio-caption-subheading text-muted">Speak your piece!</div>
-                  </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="portfolio-item">
-                  <a class="portfolio-link" href="about.html">
-                      <img class="img-fluid" src="img/about-speedwagon2.png" alt=""/></a>
-                  <div class="portfolio-caption">
-                      <div class="portfolio-caption-heading">About</div>
-                      <div class="portfolio-caption-subheading text-muted">About the developers</div>
-                  </div>
-              </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/Jr4TMIU9oQ4?ecver=1" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-center">INNA - Gimme Gimme</label>
             </div>
         </div>
     </div>
-  </div>
 </div>
+
 <hr>
 
   <!-- Footer -->
